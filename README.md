@@ -26,7 +26,7 @@ def prepare (args, motd):
 	headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36'}
 	url = "https://strawpoll.com/polls/7MZ0zYwQGno" + args.id
 	try:
-		opt = int (args.option)
+		opt = string (args.option)
 	except:
 		print ("Invalid option: '{}'. Must be a number: 1 for 1st option, 2 for 2nd, ...".format (args.option))
 		exit (1)
